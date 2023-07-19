@@ -1,14 +1,5 @@
 # template-foundry
 
-<a href="https://asciinema.org/a/jW7jmJhK7NTjGf3isEKrZ8vop" target="_blank"><img src="./asciicast.svg" /></a>
-
-<!-- ![](https://asciinema.org/a/jW7jmJhK7NTjGf3isEKrZ8vop.svg) -->
-
-A template to build, deploy and test smart contracts using [foundry-rs/forge](https://github.com/foundry-rs/foundry) and [forge-deploy](https://github.com/wighawag/forge-deploy)
-
-This template uses npm to make it easy to integrate in a full stack monorepo.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/wighawag/template-foundry)
 
 ## How to use?
 
@@ -26,12 +17,15 @@ pnpm compile
 pnpm test
 ```
 
-See how the [Counter.t.sol](test/Counter.t.sol) test use the deploy script to get setup, removing the need to duplicate the deployment procedure.
-
 ### watch for changes and rebuild automatically
 
 ```bash
 pnpm watch_compile
+```
+
+### Generate ABI
+```bash
+forge inspect src/EIP721Token.sol:TestToken abi
 ```
 
 ### deploy your contract
@@ -61,14 +55,8 @@ pnpm watch_compile
 ### export your contracts (abi+address):
   
   ```bash
-  pnpm export localhost contracts.json
+  pnpm export localhost contracts.json,contracts.ts
   ```
-
-### execute script on the deployed contract
-
-```bash
-pnpm script localhost script/UpdateCounter.s.sol --sig 'run(uint256)' 42;
-```
 
 ### zellij
 
