@@ -25,7 +25,7 @@ pnpm watch_compile
 
 ### Generate ABI
 ```bash
-forge inspect src/EIP721Token.sol:TestToken abi
+forge inspect src/EIP712Token.sol:TestToken abi
 ```
 
 ### deploy your contract

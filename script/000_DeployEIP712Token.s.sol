@@ -4,7 +4,7 @@ pragma solidity =0.8.15;
 import {DeployScript, Deployer} from "forge-deploy/DeployScript.sol";
 import {DeployerFunctions} from "@generated/deployer/DeployerFunctions.g.sol";
 
-import {TestToken} from "@main/EIP721Token.sol";
+import {TestToken} from "@main/EIP712Token.sol";
 
 contract DeployTestTokenScript is DeployScript {
     using DeployerFunctions for Deployer;
