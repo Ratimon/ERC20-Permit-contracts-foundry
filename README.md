@@ -156,3 +156,8 @@ With that you can do the following to get started:
 ```bash
 pnpm start:wezterm
 ```
+
+
+```bash
+cast call 0x8464135c8F25Da09e49BC8782676a84730C318bC "allowance(address,address)" 0x70997970c51812dc3a010c7d01b50e0d17dc79c8 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+```
