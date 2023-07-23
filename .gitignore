@@ -32,5 +32,5 @@ node_modules/
 !.vscode/extensions.json
 !*.default
 
-# ./contracts.json
-# ./contracts.ts
+/contracts.json
+/contracts.ts
